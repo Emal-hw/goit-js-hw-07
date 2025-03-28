@@ -7,14 +7,14 @@
 // Значення в інпуті очищене від пробілів по краях
 // Якщо інпут порожній або містить лише пробіли, то замість імені у спан має підставлятися рядок "Anonymous"
 
-const inputName = document.querySelector("#name-input");
-const userName = document.querySelector("#name-output");
-inputName.addEventListener("input", enterName);
+const inputName = document.querySelector('#name-input');
+const userName = document.querySelector('#name-output');
+inputName.addEventListener('input', enterName);
 
 function enterName(event) {
   const input = event.currentTarget;
 
-  userName.textContent = input.value.trim() || "Anonymous";
+  userName.textContent = input.value.trim() || 'Anonymous';
 
   // =============================Кожен перший літерал з великої літери=======================================
   // userName.textContent =

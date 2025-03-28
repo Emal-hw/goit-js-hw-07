@@ -14,11 +14,11 @@ function getRandomHexColor() {
 // При кожному кліку на елемент button.change-color фон <body> зафарбовується новим рандомним кольором
 // На <body> і span.color значення одного й того самого кольору
 
-const body = document.querySelector("body");
-const changeColor = document.querySelector(".change-color");
-const color = document.querySelector(".color");
+const body = document.querySelector('body');
+const changeColor = document.querySelector('.change-color');
+const color = document.querySelector('.color');
 
-changeColor.addEventListener("click", newColor);
+changeColor.addEventListener('click', newColor);
 
 function newColor(event) {
   const newColor = getRandomHexColor();

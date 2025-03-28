@@ -12,9 +12,9 @@
 // При сабміті в консоль виводиться об’єкт з двома властивостями, де ключі — це ім’я інпутів, а значення — відповідні значення цих інпутів, очищені від пробілів по краях
 // Після сабміту елементи форми очищаються
 
-const form = document.querySelector(".login-form");
+const form = document.querySelector('.login-form');
 
-form.addEventListener("submit", onFormSubmit);
+form.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(event) {
   event.preventDefault();
@@ -22,8 +22,8 @@ function onFormSubmit(event) {
   const email = event.target.elements.email.value;
   const pass = event.target.elements.password.value;
 
-  if (email.trim() === "" || pass.trim() === "") {
-    alert("All form fields must be filled in");
+  if (email.trim() === '' || pass.trim() === '') {
+    alert('All form fields must be filled in');
   }
 
   const formData = {
